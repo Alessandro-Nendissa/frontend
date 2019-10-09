@@ -1,0 +1,395 @@
+body {
+    margin: 0em;
+    font-family: 'Arial', sans-serif;
+}
+
+header section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-gap: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: white;
+    box-shadow: 0px 0px 5px lightgrey;
+    margin-left: 0;
+    margin-right: 0;
+}
+    
+h1 {  
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    
+}
+
+p {  
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+    
+}
+
+label {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: gray;
+    font-weight: 400;
+}
+
+.zoeken{
+    visibility: hidden;
+    height: 0em;
+    transition: 0.1s;
+}
+
+.zichtbaar {
+    visibility: visible;
+    height: 6.95em;
+    transition: 0.2s;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #07193C;
+    box-shadow: 0em 0em 10px grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header div img {
+
+}
+
+div > a{
+    text-decoration: none;
+    padding-left: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    max-width: 7em;
+    float: left;
+}
+
+header div button {
+    padding-left: 2em;
+    padding-right: 2em;
+    float: right;
+    margin-left: auto;
+    font-size: 1em;
+    color: #07193C;
+    background-color: lightblue;
+}
+
+header div button:active {
+    border-top: 0.5em solid gold;
+}
+
+
+
+div + a img {
+    min-width: 100%;
+    max-height: 10em;
+    margin-top: 4em;
+    object-fit: cover;
+    border-bottom: 0.5em solid lightblue;
+    margin-bottom: 3em;
+}
+
+header form select {
+    width: 100%;
+}
+
+input {
+    min-width: 10em;
+    height: 2em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 0.1em;
+    border-style: solid;
+    border-color: #ADDBE4;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+header input:hover {
+    box-shadow: 0em 0em 0.7em lightgrey;
+}
+
+
+
+header input:focus {
+    background-color: aliceblue;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-gap: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 0;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+nav li {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+li[target] {
+ border-bottom: 0.2em solid lightblue;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+li[target] a{
+    color: gray;
+
+}
+
+
+
+section a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    
+    
+    min-width: 10em;
+    box-shadow: 0em 0em 0.7em lightgrey;
+    border-radius: 1em;
+    background-color: white;
+    min-height: 15em;
+    text-align: left;
+}
+
+article:hover {
+    box-shadow: 0em 0em 0.7em grey;
+}
+
+h1 + article {
+    grid-template-columns: 1fr 1fr;
+     
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+article img {
+    width: 100%;
+    height: 7.5em;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+article img:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* ik gebruik de first-of-type om 1 verhaal visueel uit te lichten. */
+
+section > h3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+article h3 {
+    
+    font-family: Pembroke, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 1em;
+    color: #07193C;
+    
+}
+
+/* article h3:first-of-type {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+} */
+
+
+article footer {
+    margin-top: auto;
+    
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    color: lightblue;
+    bottom: 0;
+}
+
+/* article footer:last-of-type {
+    justify-content: flex-start;
+} */
+
+ section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+select {
+    
+    min-width: 10em;
+    background-color: white;
+    height: 3em;
+    color: lightblue;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border-color: lightblue;
+}
+
+picture {
+    width: 100%;
+}
+
+legend {
+    font-weight: 700;
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+@media screen and (min-width: 35em) {
+  header section {
+    width: 31em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 33em;
+    margin-left: auto;
+    margin-right: auto;
+}
+    h1 {  
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+    .zoeken{
+    visibility: visible;
+    height: 6.95em;
+}
+
+    header div button {
+    visibility: hidden;
+}
+    section > h3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+    
+
+  
+}
+
+@media screen and (min-width: 55em) {
+  header section {
+    width: 43em;
+
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 45em;
+}
+    h1 {  
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+    
+    section > h3{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+  
+}
+
+
+
+.download {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 1em 5em;
+    text-align: center;
+    text-decoration: none;
+    max-width: 10em;
+    
+    
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    
+    font-size: 16px;
+    box-shadow: 0px 3px 5px lightgrey;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.download:hover {
+    box-shadow: 0px 3px 5px lightgrey;
+    color: lightblue;
+}
+
+.download:active {
+    box-shadow: none;
+    color: lightblue;
+}
+
+.download:focus {
+    border-color: none;
+}
+
+
+body img {
+    width: 100%;
+}
+
+
+
+
